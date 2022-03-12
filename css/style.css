@@ -247,17 +247,20 @@ footer {
         padding-top: 10px;
     }
 @media screen and (max-width:768px) { 
-    .ft-1, .ft-2 {
-        margin-bottom: 20px;
+    footer {
+        padding: 20px 10px;
     }
-    .ft-3 {
-        order: 1;
-    }
-    .ft-1 {
-        order: 3;
-        margin-top: 20px;
-    }
-    footer h3 {
-        font-size: 13px;
-    }
+        .ft-1, .ft-2 {
+            margin-bottom: 20px;
+        }
+        .ft-3 {
+            order: 1;
+        }
+        .ft-1 {
+            order: 3;
+            margin-top: 20px;
+        }
+        footer h3 {
+            font-size: 13px;
+        }
 }
