@@ -1,0 +1,213 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 2.5%;
+    margin: 0;
+    background-color: #F3FFFF;
+}
+
+/* ==== TYPOGRAPHY ==== */
+.bk-h2 {
+    color: #4C0000;
+}
+
+.bk-hr {
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+    background: #004C4C;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* ==== */
+
+    .main-cont {
+        background-color: #FFF;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2.5%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 3px 3px 5px 2px #e9e8e8;
+    }
+        /* ==== PART 1 ==== */
+        .bk-logo {
+            width: 50%;
+            margin: 0 auto 30px;
+        }
+        .bk-about {
+            margin: 0 auto 30px;
+        }
+
+        /* == meet the team == */
+        .t-card {
+            width: 250px;
+            max-width: 45%;
+            height: 300px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+            .tc-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .tc-info {
+                color: #FFF;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 10px;
+                width: 100%;
+            }
+                .tc-name {
+                    font-size: 20px;
+                }
+                .t-post {
+                    display: block;
+                    font-size: 12px;
+                }
+
+        /* ==== PART 2 ==== */
+        .slide-div {
+            position: relative;
+            margin-bottom: 50px;
+        }
+            .slide-div h3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #FFF;
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+                z-index: 9;
+            }
+            .slide-div .slide-overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.9);
+                z-index: 1;
+            }
+            .carousel-control-next, .carousel-control-prev {
+                display: none;
+            }
+        .bk-mop a {
+            color: #4C0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+            .bk-mop a:hover {
+                letter-spacing: 1px;
+            }
+/* ==== FOOTER ==== */
+footer {
+    background-color: #4C0000;
+    height: 350px;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 3px 3px 5px 2px #e9e8e8;
+    padding: 20px 0 0;
+}
+    .bk-ft {
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+        .ft-img {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .bk-ft img, .ft-img a {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+            .ft-img a:hover {
+                border-bottom: none;
+                transform: scale(0.9);
+            }
+    footer h3, footer a {
+        text-decoration: none;
+        color: #FFF;
+    }
+    footer h3 {
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 10px;
+    }
+    footer ul {
+        list-style: none;
+    }
+        footer a {
+            font-size: 15px;
+        }
+            footer a:hover {
+                color: #CCC;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #CCC;
+            }
+        footer li {
+            margin-bottom: 10px;
+        }
+    
+    .contact-form {
+        width: 100%;
+    }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-bottom: 5px;
+        }
+        .contact-form input[type=submit] {
+            width: 150px;
+            background-color: #000;
+            color: #FFF;
+            font-size: 15px;
+        }
+            .contact-form input[type=submit]:hover {
+                color: #000;
+                background-color: #FFF;
+            }
