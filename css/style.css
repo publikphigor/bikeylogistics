@@ -41,6 +41,18 @@ ul, li {
     font-style: italic;
 }
 
+@media screen and (max-width:768px) {
+    body {
+        background-color: #FFF;
+        padding: 0;
+        margin: 0;
+    }
+        .bk-hr {
+            margin: 20px auto;
+            width: 75%;
+        }
+}
+
 /* ==== */
 
     .main-cont {
@@ -95,6 +107,24 @@ ul, li {
                     display: block;
                     font-size: 12px;
                 }
+@media screen and (max-width:768px) {
+    .bk-about {
+        margin-bottom: 20px;
+    }   
+    .t-card {
+        width: 150px;
+        height: 200px;
+        max-width: 95%;
+        margin: 10px auto;
+    }
+        .tc-name {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+        }
+        .t-post {
+            font-size: 10px;
+        }
+}
 
         /* ==== PART 2 ==== */
         .slide-div {
@@ -211,3 +241,27 @@ footer {
                 color: #000;
                 background-color: #FFF;
             }
+    .copyright {
+        color: #FFF;
+        text-align: center;
+        border-top: 1px solid #CCC;
+        padding-top: 10px;
+    }
+@media screen and (max-width:768px) {
+    footer {
+        height: auto;
+    }    
+        .ft-1, .ft-2 {
+            margin-bottom: 20px;
+        }
+        .ft-3 {
+            order: 1;
+        }
+        .ft-1 {
+            order: 3;
+            margin-top: 20px;
+        }
+        footer h3 {
+            font-size: 13px;
+        }
+}
